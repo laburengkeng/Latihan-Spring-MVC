@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
 import com.timposu.Pengajuan;
 import com.timposu.service.PegawaiService;
 
 @Controller
-public class PengajuanController {
+public class PengajuanController extends MultiActionController {
 	
 	@Autowired
 	private PegawaiService pegawaiService;
