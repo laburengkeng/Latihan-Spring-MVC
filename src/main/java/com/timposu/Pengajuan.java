@@ -9,7 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Min;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -25,7 +24,7 @@ public class Pengajuan implements Serializable {
 	@GeneratedValue
 	private Long id;
 	
-	@DateTimeFormat(pattern="yyyy-MM-dd")	
+	@DateTimeFormat(pattern="yyyy-MM-dd")  // format tanggal sesuai database mysql
 	private Date waktu_pengajuan = new Date();
 
 	@ManyToOne
