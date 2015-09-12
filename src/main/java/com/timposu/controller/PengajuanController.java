@@ -34,14 +34,14 @@ public class PengajuanController extends MultiActionController {
 	
 	@RequestMapping(value="/pengajuan", method=RequestMethod.POST)
 	public String processForm(@ModelAttribute("pengajuanForm")  Pengajuan p, 
-			BindingResult errors,  SessionStatus status){
+			BindingResult errors){
 
 		if(errors.hasErrors()){
 			return "pengajuan";
 		}
 		
 		pegawaiService.save(p);
-		status.setComplete();
+		
 		return "redirect:pengajuan";
 	}
 }

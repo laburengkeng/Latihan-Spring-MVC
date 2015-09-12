@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-HAlo ${pengajuan.pemohon}
+HAlo ${pengajuan.pemohon.id}
 </body>
 </html>
