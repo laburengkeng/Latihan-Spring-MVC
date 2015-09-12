@@ -40,7 +40,7 @@
 		<table>
 			<tr>
 				<td>Pegawai</td>
-				<td><form:select path="pemohon" >
+				<td><form:select path="pemohon.id" >
            			 <form:options items="${pegawaiList}" 
            			 	itemValue="id" itemLabel="nama"/>
         			</form:select>
