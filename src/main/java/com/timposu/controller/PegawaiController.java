@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.support.SessionStatus;
+
 import com.timposu.Pegawai;
 import com.timposu.service.PegawaiService;
 
@@ -23,6 +25,13 @@ import com.timposu.service.PegawaiService;
 public class PegawaiController {
         
     @Autowired PegawaiService pegawaiService;
+    
+    // for JSON
+    @RequestMapping("/json")
+    @ResponseBody
+    public List<Pegawai> listJson(){
+    	return pegawaiService.getAll();
+    }
     
     
     @RequestMapping(value="/list", method=RequestMethod.GET)
