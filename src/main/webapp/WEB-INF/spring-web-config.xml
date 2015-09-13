@@ -35,9 +35,6 @@
 	</bean>
 
 	
-	
-		
-  
    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
    		p:driverClassName="${jdbc.driver}"
    		p:url="${jdbc.url}"
@@ -50,10 +47,16 @@
 	
 	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager"
           p:sessionFactory-ref="sessionFactory"/>
-          
+    
+    <!-- Pesan Validasi -->      
     <bean id="messageSource"
         class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
         <property name="basename" value="/WEB-INF/messages" />
     </bean>
-	
+    
+    <!-- Upload file -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+		<property name="maxUploadSize" value="1000000"></property>
+	</bean>
 </beans>
