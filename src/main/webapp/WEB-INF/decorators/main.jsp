@@ -28,8 +28,6 @@
 		<!-- Date picker -->
 			<link type="text/css" href="<%=request.getContextPath()%>/resources/css2/jquery-ui.css"  
 											rel="stylesheet" />	
-			<script type="text/javascript" src="<%=request.getContextPath()%>/resources/css2/external/jquery/jquery.js" >
-			</script>
 			<script type="text/javascript" src="<%=request.getContextPath()%>/resources/css2/jquery-ui.js" >
 			</script>
 			
@@ -96,17 +94,7 @@
 			</div>
 		</div>
 		
-		<script type="text/javascript">
-				$(function(){
-			
-					// Datepicker
-					$('input[name=waktu_pengajuan]').datepicker({
-						dateFormat: "yy-mm-dd"
-					});
-					
-				});
-			</script>
-
+	
 		<!-- Footer -->
 		<div id="featured">
 			<div class="container">
