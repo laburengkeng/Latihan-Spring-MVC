@@ -9,7 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Min;
+
+import org.hibernate.annotations.GenericGenerator;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -22,10 +23,11 @@ public class Pengajuan implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue
-	private Long id;
+	@GeneratedValue(generator = "system-uuid")
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
+	private String id;
 	
-	@DateTimeFormat(pattern="yyyy-MM-dd")	
+	@DateTimeFormat(pattern="yyyy-MM-dd")  // format tanggal sesuai database mysql
 	private Date waktu_pengajuan = new Date();
 
 	@ManyToOne
@@ -36,11 +38,11 @@ public class Pengajuan implements Serializable {
 
 	private Long nilai;
 
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

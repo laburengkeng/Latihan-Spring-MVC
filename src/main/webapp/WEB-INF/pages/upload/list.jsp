@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Hasil Upload</title>
 </head>
 <body>
-HAlo ${pengajuan.pemohon.id}
+<h1>Hasil Upload</h1>
 </body>
 </html>

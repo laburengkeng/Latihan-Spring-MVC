@@ -2,35 +2,36 @@ package com.timposu;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Null;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.beans.factory.annotation.Configurable;
 
 @Entity
 @Table(name="pegawai")
 public class Pegawai implements Serializable{
 
 	/**
-	 * 
+	 * @ucuptimposu
 	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id @GeneratedValue
 	private Long id;
 	
-	@NotEmpty
-	@Size(min=1, max=30)
+	@Column(name="nama")
 	private String nama;
 	
-
-	@NotNull
-	@Min(1)
+	@Column(name="gaji")
 	private Long gaji;
 	
 	public Long getId() {

@@ -13,7 +13,7 @@
 		<table>
 				<tr>
 					<td>
-					<form:select path="pemohon" >
+					<form:select path="pemohon.id" >
            			 <form:options items="${pemohonList}" 
            			 	itemValue="id" itemLabel="nama"/>
         			</form:select>

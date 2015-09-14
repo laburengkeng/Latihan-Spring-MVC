@@ -20,10 +20,10 @@ public class MataPelajaranController {
 	public ModelAndView viewPage(){
 		ModelAndView modelAndView = new ModelAndView("matapelajaran");
 		Map<String, String> mataPelajaran = new HashMap();
-		mataPelajaran.put("mtk", "MateMatika");
-		mataPelajaran.put("bi", "Bahasa Indonesia");
-		modelAndView.addObject("pelajaranList", mataPelajaran);
-		modelAndView.addObject("pelajaranForm",new Siswa());
+			mataPelajaran.put("mtk", "MateMatika");
+			mataPelajaran.put("bi", "Bahasa Indonesia");
+			modelAndView.addObject("pelajaranList", mataPelajaran);
+			modelAndView.addObject("pelajaranForm",new Siswa());
 		return modelAndView;
 		
 	}
