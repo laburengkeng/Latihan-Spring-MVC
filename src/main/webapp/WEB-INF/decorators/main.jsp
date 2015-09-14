@@ -1,5 +1,8 @@
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="decorator" %>
 <!DOCTYPE HTML>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>    
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!--
 	Iridium by TEMPLATED
     templated.co @templatedco
