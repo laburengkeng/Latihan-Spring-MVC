@@ -29,14 +29,11 @@ public class Pegawai implements Serializable{
 	@Id @GeneratedValue
 	private Long id;
 	
-	@NotEmpty
-	@Column(name="nama")
+	@NotNull
 	private String nama;
 	
-	@NotEmpty
-	@NumberFormat
+	@NotNull
 	@Min(1)
-	@Column(name="gaji")
 	private Long gaji;
 	
 	public Long getId() {
