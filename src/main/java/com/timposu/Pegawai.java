@@ -28,9 +28,12 @@ public class Pegawai implements Serializable{
 	@Id @GeneratedValue
 	private Long id;
 	
+	@NotEmpty
 	@Column(name="nama")
 	private String nama;
 	
+	@NotNull
+	@Min(1)
 	@Column(name="gaji")
 	private Long gaji;
 	
