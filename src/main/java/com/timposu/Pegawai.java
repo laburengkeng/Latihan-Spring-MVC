@@ -15,6 +15,7 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.format.annotation.NumberFormat;
 
 @Entity
 @Table(name="pegawai")
@@ -28,6 +29,7 @@ public class Pegawai implements Serializable{
 	@Id @GeneratedValue
 	private Long id;
 	
+
 	@NotEmpty
 	@Column(name="nama")
 	private String nama;
