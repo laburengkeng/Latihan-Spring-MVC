@@ -10,7 +10,10 @@
 	<http auto-config="true" use-expressions="true">
 		<intercept-url pattern="/form" access="hasRole('ROLE_ADMIN')" />
 		<intercept-url pattern="/list" access="hasRole('ROLE_USER')" />
-		
+		<form-login login-processing-url="/login" login-page="/loginpage"
+		username-parameter="username" password-parameter="password"  
+		authentication-failure-url="/loginpage?auth=fail" />
+		<logout logout-url="/logout" logout-success-url="/logoutpage" />  
 	</http>
 	  
 	<authentication-manager>
