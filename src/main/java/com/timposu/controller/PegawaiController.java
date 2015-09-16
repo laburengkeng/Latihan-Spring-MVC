@@ -67,7 +67,7 @@ public class PegawaiController {
 	}
 	
 	@RequestMapping(value="/form" , method=RequestMethod.POST)
-	public String sukses(@Validated @ModelAttribute Pegawai pegawai,
+	public String sukses(@Validated @ModelAttribute("pegawaiForm") Pegawai pegawai,
 			BindingResult result,  SessionStatus status){
 		
 		if(result.hasErrors()){

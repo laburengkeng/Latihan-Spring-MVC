@@ -19,9 +19,9 @@
 	
 	<table>
     <tr>
-        <td>Name</td>
+        <td><form:label path="nama">Nama</form:label></td>
         <td><form:input path="nama" size="30"/></td>
-         <td><form:errors path="nama" cssClass="error" /></td> 
+        <td><form:errors path="nama" cssClass="error" /></td> 
     </tr>
     <tr>
         <td><form:label path="gaji">Gaji</form:label></td>

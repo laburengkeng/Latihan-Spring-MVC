@@ -15,6 +15,15 @@
 <script type="text/javascript" src="<c:url value="/resources/css2/jquery-ui.js" />" >
 </script>
 
+
+<style>
+	.error{
+		color:red;font-weight:bold; 
+	}
+</style>
+
+</head>
+<body>
 <script type="text/javascript">
 	$(function(){
 
@@ -25,14 +34,6 @@
 		
 	});
 </script>
-<style>
-	.error{
-		color:red;font-weight:bold; 
-	}
-</style>
-
-</head>
-<body>
 
 	<h1>Form Pengajuan Pinjaman</h1>
 
