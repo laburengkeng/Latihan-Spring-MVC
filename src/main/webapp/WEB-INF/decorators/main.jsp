@@ -16,7 +16,7 @@
 		<meta name="keywords" content="" />
 		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 		<script src="<%=request.getContextPath()%>/resources/template/iridium/js/skel.min.js"></script>
 		<script src="<%=request.getContextPath()%>/resources/template/iridium/js/skel-panels.min.js"></script>
 		<script src="<%=request.getContextPath()%>/resources/template/iridium/js/init.js"></script>
@@ -29,6 +29,9 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		
 		<!-- Date picker -->
+			<script type="text/javascript" src="<%=request.getContextPath()%>/resources/css2/external/jquery/jquery.js"  >
+				</script>
+			
 			<link type="text/css" href="<%=request.getContextPath()%>/resources/css2/jquery-ui.css"  
 											rel="stylesheet" />	
 			<script type="text/javascript" src="<%=request.getContextPath()%>/resources/css2/jquery-ui.js" >
