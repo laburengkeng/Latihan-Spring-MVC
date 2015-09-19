@@ -63,6 +63,7 @@
 				<nav id="nav">
 					<ul>
 						<li class="active"><a href="/">Home</a></li>
+						<li><a href="/logout">Logout</a></li>
 					</ul>
 				</nav>
 			</div>

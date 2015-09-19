@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	Anda telah logout, silahkan <a href="<%=request.getContextPath()%>/loginpage">Login disini</a> jika ingin masuk lagi.
 </body>
 </html>
