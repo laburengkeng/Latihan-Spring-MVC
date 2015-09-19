@@ -18,12 +18,13 @@
 	  
 	<authentication-manager>
 	<authentication-provider>
-		<user-service>
-		<user name="ucup" password="topeko" authorities="ROLE_USER, ROLE_ADMIN" />
-		<user name="aco" password="12345" authorities="ROLE_USER" />
-		</user-service>
+	
+		<jdbc-user-service data-source-ref="dataSource"
+		users-by-username-query="select username, password, enable from users where username=?"
+		authorities-by-username-query="select username, role from user_role where username=?"/>
 	</authentication-provider>
 	</authentication-manager>
+  
   
 	
 </beans:beans>
