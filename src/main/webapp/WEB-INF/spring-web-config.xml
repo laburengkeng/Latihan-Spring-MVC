@@ -48,17 +48,13 @@
 	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager"
           p:sessionFactory-ref="sessionFactory"/>
     
-    <!-- Pesan Validasi     
+    <!-- Pesan Validasi         -->  
     <bean id="messageSource"
         class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
         <property name="basename" value="/WEB-INF/messages" />
     </bean>
-    -->  
-     <bean id="messageSource"   
-      class="org.springframework.context.support.ResourceBundleMessageSource">  
-      <property name="basenames" value="mymessages">
-      </property>
-    </bean>
+
+     
     
     <!-- Upload file -->
 	<bean id="multipartResolver"

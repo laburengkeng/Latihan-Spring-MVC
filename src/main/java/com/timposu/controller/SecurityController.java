@@ -16,4 +16,6 @@ public class SecurityController {
 	public String logoutPage(){
 		return "logoutpage";
 	}
+	
+	
 }

@@ -13,8 +13,8 @@
 	
 	<c:if test="${'fail' eq param.auth}">
         <div style="color:red">
-                Login Failed!!!<br />
-                Reason : ${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
+                Login Gagal!!!<br />
+                Username atau Password tidak cocok!
          </div>
     </c:if>
 	
