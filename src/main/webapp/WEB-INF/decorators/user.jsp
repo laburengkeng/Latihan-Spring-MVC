@@ -46,6 +46,16 @@
 			</style>
 		<!-- end datepicker -->
 		
+		<script type="text/javascript">
+		 $(document).ready(function() {
+	           
+	               $.getJSON('<%=request.getContextPath()%>/info/users', function(data) {
+	                  $('#currentUser').html('Halo: ' + data.currentUser + ' ');
+	               });
+	           
+	         });
+		</script>
+		
 	</head>
 	<body>
 
@@ -77,6 +87,9 @@
 					<!-- Sidebar -->
 					<div id="sidebar" class="4u">
 						<section>
+						 <div id="currentUser">
+						 
+						 </div>
 							<header>
 								<h2>Menu</h2>
 							</header>
